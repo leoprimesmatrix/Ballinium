@@ -1,7 +1,7 @@
 <div align="center">
   <img src="./promo.png" alt="BALLINIUM: March 26 Only on GitHub Pages" width="600" />
 
-  # BALLINIUM // ASCENDED
+  # BALLINIUM
 
   **A physics-based strategic simulation game by PrimeDev Studios.**
   
@@ -13,7 +13,7 @@
 <br />
 
 ## 🪐 WHAT IS BALLINIUM?
-**Ballinium // Ascended** is a cutting-edge, browser-based strategic simulation game. Players are thrust into an immersive, neon-drenched interface where they must manipulate physics and momentum to conquer intricately designed sectors. Utilizing tools like Reflectors, Accelerators, and Gravity Wells, the objective is to calculate the perfect trajectory to overcome each unique challenge. 
+**Ballinium** is a cutting-edge, browser-based strategic simulation game. Players are thrust into an immersive, neon-drenched interface where they must manipulate physics and momentum to conquer intricately designed sectors. Utilizing tools like Reflectors, Accelerators, and Gravity Wells, the objective is to calculate the perfect trajectory to overcome each unique challenge. 
 
 Every level demands logic, precision, and spatial reasoning, wrapped in a retro-futuristic, scanline-heavy aesthetic designed to echo the golden age of arcade puzzle games—evolved for the modern web.
 
@@ -25,7 +25,7 @@ Every level demands logic, precision, and spatial reasoning, wrapped in a retro-
 * **Responsive Architecture:** Seamlessly scales from desktop monitors down to mobile viewports without sacrificing the intentional minimalism of the core UI.
 
 ## 🚀 RELEASE DATE
-**Ballinium // Ascended** officially launches on **March 26**.
+**Ballinium** officially launches on **March 26**.
 
 ## 🔗 TRANSMISSION LINKS
 * **[>> INITIATE SYSTEM: Play Ballinium Here <<](https://leoprimesmatrix.github.io/Ballinium/)**

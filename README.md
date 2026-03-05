@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./promo.png" alt="BALLINIUM: March 26 Only on GitHub Pages" width="100%" />
+  <img src="./promo.png" alt="BALLINIUM: March 26 Only on GitHub Pages" width="600" />
 
   # BALLINIUM // ASCENDED
 

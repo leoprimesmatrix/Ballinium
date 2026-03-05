@@ -18,7 +18,7 @@ try {
     db = getFirestore(app);
     isInitialized = true;
 } catch (error) {
-    console.warn("Firebase not initialized:", error);
+    // Silent fail
 }
 
 export const fetchServerConfig = async () => {
@@ -40,7 +40,7 @@ export const fetchServerConfig = async () => {
                 (window as any).__BALLINIUM_ENCRYPTED_LEVELS__ = levelsSnap.data().payload;
             }
         } catch (levelErr) {
-            console.warn("Failed to fetch encrypted levels. This is expected if they are not set up yet:", levelErr);
+            // Error ignored
         }
 
         if (docSnap.exists()) {
@@ -48,11 +48,9 @@ export const fetchServerConfig = async () => {
         } else {
             // Because Firestore is in Production mode, checking an empty doc will either fail gracefully or return empty.
             // Returning offline by default just in case it doesn't fail fast.
-            console.error("Config document does not exist. Please create it in Firebase Console.");
             return { isOnline: false, announcement: "CONNECTION SEVERED // SERVER UNCONFIGURED.", secureKey: "" };
         }
     } catch (error) {
-        console.error("Failed to fetch server config (Possbile permission/CORS error):", error);
         return { isOnline: false, announcement: "SERVER COMMS FAILED // ACCESS DENIED", secureKey: "" };
     }
 };

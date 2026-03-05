@@ -169,7 +169,7 @@ const App: React.FC = () => {
     try {
       localStorage.setItem('BALLINIUM_ASCENDED', 'true');
     } catch (e) {
-      console.warn("Storage access denied");
+      // Ignored
     }
     // NOTE: We do NOT stop the music here. 
     // Credits song will continue playing on Title Screen until user clicks Start.

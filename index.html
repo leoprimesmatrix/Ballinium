@@ -94,10 +94,9 @@
 
     async function boot() {
       const blobRegistry = {};
-      const cacheBuster = Date.now();
 
       for (const file of fileManifest) {
-        let code = await fetch(file + '?v=' + cacheBuster).then(r => r.text());
+        let code = await fetch(file).then(r => r.text());
         code = code.replace(/import\s+['"].*?\.css['"];/g, '');
 
         // Fixed the "Extra Quote" bug from previous versions
@@ -111,7 +110,7 @@
             filename: file
           });
           blobRegistry[file] = URL.createObjectURL(new Blob([result.code], { type: 'application/javascript' }));
-        } catch (e) { console.error(`Compile Error [${file}]:`, e); }
+        } catch (e) { /* Error ignored */ }
       }
 
       const script = document.createElement('script');

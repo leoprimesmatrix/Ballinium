@@ -8,7 +8,6 @@ export const getLevel = (index: number, width: number, height: number): LevelDat
   const payload = (window as any).__BALLINIUM_ENCRYPTED_LEVELS__;
 
   if (!payload) {
-    console.error("SECURITY ALERT: Level payload missing from Server.");
     return createEmptyFallback(index, width, height);
   }
 
@@ -36,7 +35,6 @@ export const getLevel = (index: number, width: number, height: number): LevelDat
       decryptedFunction = new Function('index', 'width', 'height', codeString);
 
     } catch (e) {
-      console.error("SECURITY ALERT: AES Decryption Failed. Tampering Detected.", e);
       return createEmptyFallback(index, width, height);
     }
   }

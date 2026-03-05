@@ -34,5 +34,5 @@ Every level demands logic, precision, and spatial reasoning, wrapped in a retro-
 ---
 
 <div align="center">
-  <sub><i>"Reduction is the ultimate sophistication."</i> — <b>PrimeDev Studios</b></sub>
+  <sub><i>"Made with heart and thought into people's heart's & emotion."</i> — <b>PrimeDev Studios</b></sub>
 </div>

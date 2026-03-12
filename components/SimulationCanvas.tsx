@@ -872,7 +872,7 @@ export const SimulationCanvas: React.FC<SimulationCanvasProps> = ({
                     ctx.globalCompositeOperation = 'screen';
 
                     switch (biome) {
-                        case 0: { // 🌿 BIOME 0: BOREAL AURORA
+                        case 0: { // 🌿 BIOME 0: BOREAL AURORA (AAA Quality)
                             // 4 massive aurora bands spanning thicker height
                             const auroraBands = [
                                 { color: [0, 220, 255], yBase: 0.25, freq: 0.00045, amp: 0.08, speed: 0.00018, opacity: 0.12 },
